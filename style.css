@@ -178,8 +178,9 @@ nav ul.active{
     font-size:32px;
 }
 
-.hero h2{
+.hero h3{
     font-size:20px;
+    color: #00bfff;
 }
 
 .hero p{
@@ -208,4 +209,146 @@ nav ul.active{
     margin-left:0;
 }
 
+}
+
+
+
+
+#contact{
+
+    background:#111827;
+
+}
+
+.contact-text{
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+    color:#d1d5db;
+
+}
+
+.contact-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.contact-card{
+
+    width:280px;
+    background:#0f172a;
+    padding:30px;
+
+    border-radius:15px;
+
+    border:1px solid transparent;
+
+    display:block;
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:transform .3s ease,
+               box-shadow .3s ease,
+               border-color .3s ease;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 20px rgba(0,191,255,.25);
+
+    border-color:#00bfff;
+
+}
+
+.contact-card i{
+
+    font-size:40px;
+
+    color:#00bfff;
+
+    margin-bottom:15px;
+
+}
+
+.contact-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.contact-card span{
+
+    color:#cbd5e1;
+
+}
+
+
+#stats{
+    background:#111827;
+    padding:60px 10%;
+}
+.stats-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+.stat-box{
+    text-align:center;
+    min-width:200px;
+}
+.stat-box h2{
+    font-size:50px;
+    color:#00bfff;
+}
+.stat-box p{
+    font-size:18px;
+    color:#d1d5db;
+}
+
+.whatsapp-float{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    text-decoration:none;
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+    z-index:9999;
+    animation:floatWhatsapp 2s infinite;
+}
+.whatsapp-float:hover{
+    transform:scale(1.15);
+}
+@keyframes floatWhatsapp{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+    100%{
+        transform:translateY(0);
+    }
 }
